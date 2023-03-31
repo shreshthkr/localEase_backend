@@ -4,8 +4,8 @@ require('dotenv').config()
 const cors = require('cors');
 const { AdminRouter } = require('./routes/Admin.routes');
 const { UserRouter } = require('./routes/User.routes');
-const {productRouter} = require("./routes/product.router");
-const {dealRouter} = require("./routes/deal.router")
+const {productRouter} = require("./Routes/product.routes");
+const {dealRouter} = require("./Routes/deal.routes")
 
 const { connection } = require('./db');
 
