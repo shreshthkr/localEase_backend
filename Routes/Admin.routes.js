@@ -1,12 +1,12 @@
 const express = require("express");
-require("dotenv").config()
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
+const AdminRouter = express.Router();
 const { AdminModel } = require("../model/Admin.model");
 const { authentication } = require("../middleware/admin.middleware");
 const { UserModel } = require("../model/User.model");
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
+require("dotenv").config()
 
-const AdminRouter = express.Router();
 
 
 AdminRouter.post("/register", async (req, res) => {
